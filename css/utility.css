@@ -1,0 +1,19 @@
+.white{
+    color: #fff;
+}
+
+.tdn{
+    text-decoration: none;
+    color: var(--bs-link-color);
+}
+
+.sz-1{
+    font-size: 1.1em;
+}
+
+.ff-p{
+    font-family: var(--ff-primary);
+}
+.ff-p{
+    font-family: var(--ff-primary);
+}
