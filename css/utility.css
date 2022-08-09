@@ -1,19 +1,30 @@
-.white{
+.white {
     color: #fff;
 }
 
-.tdn{
+.tdn {
     text-decoration: none;
     color: var(--bs-link-color);
 }
 
-.sz-1{
+.sz-1 {
     font-size: 1.1em;
 }
 
-.ff-p{
+.ff-p {
     font-family: var(--ff-primary);
 }
-.ff-p{
+
+.ff-p {
     font-family: var(--ff-primary);
+}
+
+.heading-style {
+
+
+    font-family: var(--ff-rale);
+    color: var(--mtxt);
+    font-size: 2em;
+    /* margin-top: 1.5em; */
+
 }
