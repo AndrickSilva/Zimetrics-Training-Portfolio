@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 :root {
@@ -13,6 +14,7 @@
     --ff-secondary: 'Open Sans', sans-serif;
     --ff-rale: 'Raleway', sans-serif;
     --bg-color: #040b14;
+    --bg-section: #f5f8fd;
     --bs-link-color: #0d6efd;
     --mtxt: #173b6c;
     --ltxt: #272829;
@@ -97,12 +99,12 @@ footer p {
 
 .main-container {
     width: 80%;
-    min-height: 100vh;
+
 }
 
 .m-container {
     max-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url(/img/bg.jpeg);
     background-position: center top;
@@ -133,38 +135,16 @@ footer p {
 }
 
 .details p {
-    font-family: var(--ff-secondary);
     font-weight: 500;
     font-size: 1.5em;
 }
 
 section {
-    padding: 3em 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.about h1 {
-    font-family: var(--ff-rale);
-    color: var(--mtxt);
-    font-size: 2em;
-    /* margin-top: 1.5em; */
-}
-
-.about h1::after {
-    content: " ";
-    /* text-decoration: solid underline var(--underLine) 4px; */
-    position: absolute;
-    height: 4px;
-    width: 50px;
-    display: block;
-    background-color: #0d6efd;
-    margin-top: 10px;
-}
-
-.about p {
-    font-family: var(--ff-secondary);
-    color: var(--ltxt);
-    margin: 1.5em 0;
-}
 
 .about-container {
     display: flex;
@@ -196,13 +176,77 @@ section {
     line-height: 2;
 }
 
-.facts h1::after {
-    content: " ";
-    /* text-decoration: solid underline var(--underLine) 4px; */
-    position: absolute;
-    height: 4px;
-    width: 50px;
-    display: block;
-    background-color: #0d6efd;
-    margin-top: 10px;
+.fact-data {
+    margin: 4em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 160px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.facts-icons {
+    color: var(--underLine);
+    font-size: 4em;
+}
+
+.test {
+    display: flex;
+}
+
+.icon-container span {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.skills {
+    background-color: var(--bg-section);
+    padding-bottom: 4em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.skill-main {
+    width: 90%;
+}
+
+.skill-know {
+    height: 8px;
+    width: 100%;
+    background-color: gray;
+    margin: 14px 0;
+}
+
+.percentage {
+    width: 90%;
+    background-color: var(--underLine);
+    height: 8px;
+}
+
+.skill-name {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-right {
+    width: 50%;
+}
+
+.skills-left {
+    width: 50%;
+}
+

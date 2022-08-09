@@ -20,11 +20,27 @@
 }
 
 .heading-style {
-
-
     font-family: var(--ff-rale);
     color: var(--mtxt);
     font-size: 2em;
     /* margin-top: 1.5em; */
 
+}.underline::after {
+    content: " ";
+    /* text-decoration: solid underline var(--underLine) 4px; */
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    display: block;
+    background-color: #0d6efd;
+    margin-top: 10px;
+}
+
+.p-style{
+    font-family: var(--ff-secondary);
+    color: var(--ltxt);
+}
+
+.p-m{
+    margin: 1.5em 0;
 }
