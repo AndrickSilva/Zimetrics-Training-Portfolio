@@ -96,7 +96,7 @@ header {
     opacity: 1;
 }
 
-.header-two a:hover i{
+.header-two a:hover i {
     color: var(--underLine);
 }
 
@@ -422,18 +422,124 @@ section {
     padding-bottom: 5em;
 }
 
-.link-hover{
+.link-hover {
     text-decoration: none;
     cursor: pointer;
 }
 
-.link-hover:hover h2{
+.link-hover:hover h2 {
     color: var(--underLine);
     text-decoration: none;
     cursor: pointer;
 }
 
-#Testimonials{
+#Testimonials {
     background-color: var(--bg-section);
     height: 100vh;
+}
+
+
+#Contact {
+    padding-bottom: 5em;
+}
+
+.contact-container {
+    margin-top: 4em;
+    display: flex;
+    gap: 1.5em;
+}
+
+.location {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2em;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    padding: 1.8em;
+
+}
+
+
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    /* cursor: pointer; */
+}
+
+.contact-icon {
+    font-size: 1em;
+    background-color: #dff3fc;
+    color: var(--underLine);
+    padding: 1em;
+    border-radius: 500px;
+    transition: 0.4s ease-out;
+
+}
+
+.location-info:hover .contact-icon {
+    background-color: var(--underLine);
+    color: #dff3fc;
+    transition: 0.2s ease-out;
+
+}
+
+.info-details h2 {
+    font-size: 1.4em;
+    font-weight: 200;
+    font-family: var(--ff-rale);
+}
+
+.info-details p {
+    margin-top: 0.4em;
+}
+
+.form {
+    width: 55%;
+    padding: 1.8em;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    font-family: var(--ff-secondary);
+}
+
+input {
+    margin-top: 0.6em;
+    display: inline-block;
+    padding: 1em 2em;
+    border: 1px solid rgb(199, 199, 199);
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.field-divider{
+    display: flex;
+    align-items: center;
+    gap: 1.8em;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid rgb(199, 199, 199);
+    margin-top: 0.6em;
+    margin-bottom: 1.5em;
+    padding: 3.5em 0;
+}
+
+.button-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-cont button{
+    padding: 0.9em 2em;
+    border: none;
+    background-color: var(--underLine);
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    /* font-weight: 600; */
 }
