@@ -172,6 +172,7 @@ section {
     display: flex;
     gap: 1em;
     margin-top: 2em;
+    overflow: hidden;
 }
 
 .about-one h2 {
@@ -292,6 +293,7 @@ section {
     margin: 1em 0;
 }
 
+
 .summary-container ul {
     padding-left: 1.5em;
     line-height: 1.7;
@@ -315,6 +317,18 @@ section {
     border-radius: 100%;
     border: 2px solid var(--underLine);
     top: 2.5em;
+    left: -0.4em;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+}
+
+.summary-container1::before{
+    content: "";
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid var(--underLine);
+    top: 0em;
     left: -0.4em;
     position: absolute;
     width: 11px;
