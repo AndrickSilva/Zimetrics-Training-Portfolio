@@ -135,9 +135,9 @@ footer p {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /* background-color: #0d6efd; */
+    padding-left: 3em;
 }
 
 /* 
@@ -616,6 +616,35 @@ textarea {
     /* font-weight: 600; */
 }
 
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--underLine);
+    display: none;
+    border-radius: 60px;
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+#scroll:hover {
+    background-color: #3e3b49;
+    opacity: 1;
+
+}
 
 /* media query */
 
@@ -738,4 +767,14 @@ textarea {
     .service-container {
         flex-wrap: wrap;
     }
+
+    .details h2 {
+        font-weight: 800;
+        font-size: 3em;
+    }
+
+    /* .m-container{
+        padding-left: 3em;
+        padding-top: 15em;
+    } */
 }
