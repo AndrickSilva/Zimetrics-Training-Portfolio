@@ -25,7 +25,9 @@
     font-size: 2em;
     /* margin-top: 1.5em; */
 
-}.underline::after {
+}
+
+.underline::after {
     content: " ";
     /* text-decoration: solid underline var(--underLine) 4px; */
     position: absolute;
@@ -36,11 +38,15 @@
     margin-top: 10px;
 }
 
-.p-style{
+.p-style {
     font-family: var(--ff-secondary);
     color: var(--ltxt);
 }
 
-.p-m{
+.p-m {
     margin: 1em 0;
 }
+
+/* .hide{
+    display: none;
+} */

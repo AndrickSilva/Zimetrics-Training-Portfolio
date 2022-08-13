@@ -22,6 +22,21 @@
     --underLine: #149ddd;
 }
 
+.bars {
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    color: white;
+    background-color: var(--underLine);
+    padding: 1em;
+    width: 3em;
+    border-radius: 500px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+}
+
 
 header {
     background-color: var(--bg-color);
@@ -616,35 +631,30 @@ textarea {
     /* font-weight: 600; */
 }
 
-#scroll {
+.scrollTop {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+    right: 2em;
+    bottom: 2em;
+    color: white;
     background-color: var(--underLine);
-    display: none;
-    border-radius: 60px;
+    padding: 1.2em;
+    border-radius: 500px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 800;
+    visibility: hidden;
+
+    transition: 0.1s ease;
 }
 
-#scroll span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -8px;
-    margin-top: -12px;
-    height: 0;
-    width: 0;
-    border: 8px solid transparent;
-    border-bottom-color: #ffffff;
+.scrollTop.active {
+    visibility: visible;
 }
 
-#scroll:hover {
-    background-color: #3e3b49;
-    opacity: 1;
 
-}
+
+
+
 
 /* media query */
 
@@ -654,8 +664,13 @@ textarea {
 @media only screen and (max-width: 768px) {
 
 
-    header {
+    .header {
         display: none;
+    }
+
+    .header.active{
+        display: flex;
+        width: 45%;
     }
 
     .main-container {
@@ -745,12 +760,23 @@ textarea {
         width: 100%;
     }
 
+    .bars {
+        display: block;
+    }
+
+
 }
 
 /* Mobile view */
 
 
 @media only screen and (max-width: 480px) {
+
+    .header.active {
+        display: flex;
+        width: 75%;
+    }
+
     .flex-details {
         display: block;
     }
