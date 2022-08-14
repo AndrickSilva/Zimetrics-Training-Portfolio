@@ -98,7 +98,7 @@ header {
     font-family: var(--ff-secondary);
 }
 
-.header-two a {
+.list-group-item {
     text-decoration: none;
     color: var(--bg-section);
     opacity: 0.7;
@@ -106,12 +106,21 @@ header {
 
 }
 
-.header-two a:hover {
+.list-group-item:hover {
     color: var(--bg-section);
     opacity: 1;
 }
 
-.header-two a:hover i {
+.list-group-item.active {
+    color: var(--bg-section);
+    opacity: 1;
+}
+
+.list-group-item:hover i {
+    color: var(--underLine);
+}
+
+.list-group-item.active i {
     color: var(--underLine);
 }
 
@@ -522,7 +531,8 @@ section {
     text-align: center;
     font-style: italic;
 }
-.Testimony p::after{
+
+.Testimony p::after {
     content: "\f10e";
     position: absolute;
     bottom: 0.6em;
@@ -534,7 +544,7 @@ section {
     opacity: 0.5;
 }
 
-.Testimony p::before{
+.Testimony p::before {
     content: "\f10d";
     position: absolute;
     top: 0.6em;
@@ -545,10 +555,6 @@ section {
     color: var(--underLine);
     opacity: 0.5;
 }
-
-
-
-
 
 
 #Contact {
@@ -681,6 +687,7 @@ textarea {
 
 
 
+
 /* media query */
 
 
@@ -693,7 +700,7 @@ textarea {
         display: none;
     }
 
-    .header.active{
+    .header.active {
         display: flex;
         width: 45%;
     }
