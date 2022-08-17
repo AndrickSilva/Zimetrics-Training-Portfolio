@@ -11,8 +11,51 @@
     --border: #48CAE4;
 }
 
-body {
-    padding: 0 0.5em;
+.bars {
+    position: fixed;
+    right: 0em;
+    top: 0em;
+    padding: 1em;
+    width: 3em;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+    z-index: 999;
+    font-size: 1.4em;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--border);
+    position: sticky;
+    top: 0;
+    padding: 0 1em;
+}
+
+.nav-cont ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-cont ul li {
+    padding: 1em;
+}
+
+.nav-cont ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    padding: 1em 0.5em 0 0.5em;
 
 }
 
@@ -194,12 +237,43 @@ body {
     height: 30vh;
 }
 
-.h-C{
+.h-C {
     width: 80%;
     height: 30vh;
 }
 
 @media only screen and (max-width: 480px) {
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation img {
+        align-self: flex-start;
+        margin: 1em;
+    }
+
+    .nav-cont {
+        display: none;
+        height: 100vh;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .nav-cont ul {
+        flex-direction: column;
+    }
+
+    .nav-cont ul li {
+        font-size: 2em;
+    }
+
+    .bars {
+        display: block;
+    }
+
     .rows {
         flex-direction: column;
         gap: 0em;
@@ -233,7 +307,8 @@ body {
     .E {
         width: 100%;
     }
-    .h-B{
+
+    .h-B {
         display: none;
     }
 

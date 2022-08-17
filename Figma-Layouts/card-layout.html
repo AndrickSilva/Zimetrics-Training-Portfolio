@@ -6,78 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card-Layout</title>
+    <!------------------ Font Awesome ---------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="./css/card.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="rows">
-            <div class="box">A</div>
-            <div class="box">B</div>
-            <div class="box">C</div>
-        </div>
-        <div class="rows">
-            <div class="box">D</div>
-            <div class="box">E</div>
-            <div class="box">F</div>
-        </div>
-        <div class="rows">
-            <div class="box">G</div>
-            <div class="box">H</div>
-            <div class="box">I</div>
+    <!-- Hamburger menu -->
+    <div class=" bars" id="bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="navigation">
+        <img src="./img/Logo.png" alt="" height="30px">
+        <div class="nav-cont">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
         </div>
     </div>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </nav>
+    <div class="hero">
 
-    <div class="side-bar">
-
-        <div class="left">
-            <p>Left</p>
+        <div class="container">
+            <div class="rows">
+                <div class="box">A</div>
+                <div class="box">B</div>
+                <div class="box">C</div>
+            </div>
+            <div class="rows">
+                <div class="box">D</div>
+                <div class="box">E</div>
+                <div class="box">F</div>
+            </div>
+            <div class="rows">
+                <div class="box">G</div>
+                <div class="box">H</div>
+                <div class="box">I</div>
+            </div>
         </div>
 
-        <div class="Right">
-            <p>Right</p>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="side-bar">
+            <div class="left">
+                <p>Left</p>
+            </div>
+            <div class="Right">
+                <p>Right</p>
+            </div>
+        </div>
+
+        <div class="card-layout">
+            <div class="c-rows">
+                <div class="c-box">A</div>
+            </div>
+            <div class="c-rows cdirection">
+                <div class="c-box B">B</div>
+                <div class="c-box E">E</div>
+            </div>
+            <div class="c-rows">
+                <div class="c-box C">C</div>
+                <div class="c-box D">D</div>
+            </div>
+        </div>
+
+        <div class="holy-grail">
+            <div class="h-rows">
+                <div class="h-box">A</div>
+            </div>
+            <div class="h-rows cdirection">
+                <div class="h-box h-B">B</div>
+                <div class="h-box h-C">C</div>
+                <div class="h-box h-D">D</div>
+            </div>
+            <div class="h-rows">
+                <div class="h-box ">E</div>
+            </div>
         </div>
 
     </div>
 
-    <div class="card-layout">
-        <div class="c-rows">
-            <div class="c-box">A</div>
-        </div>
-        <div class="c-rows cdirection">
-            <div class="c-box B">B</div>
-            <div class="c-box E">E</div>
-        </div>
-        <div class="c-rows">
-            <div class="c-box C">C</div>
-            <div class="c-box D">D</div>
-        </div>
-    </div>
+    <script>
+        const burger = document.querySelector(".bars i")
+        const nav = document.querySelector(".nav-cont")
 
-    <div class="holy-grail">
-        <div class="h-rows">
-            <div class="h-box">A</div>
-        </div>
-        <div class="h-rows cdirection">
-            <div class="h-box h-B">B</div>
-            <div class="h-box h-C">C</div>
-            <div class="h-box h-D">D</div>
-        </div>
-        <div class="h-rows">
-            <div class="h-box ">E</div>
-        </div>
-    </div>
-
-
+        burger.addEventListener('click', function () {
+            nav.classList.toggle('active')
+            (burger.className == "fa-solid fa-bars" ? burger.className = 'fa-solid fa-xmark' : burger.className = 'fa-solid fa-bars')
+        })
+    </script>
 </body>
 
 </html>
