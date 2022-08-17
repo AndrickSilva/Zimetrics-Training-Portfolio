@@ -46,3 +46,7 @@
 .p-m {
     margin: 2em 0;
 }
+
+.typeUnderline{
+    border-bottom: 3px solid #0d6efd;
+}
