@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #fff;
+}
+
+.container {
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+    border: 4px solid #4372ff;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    align-items: center;
+    max-width: 100%;
+}
+
+.box {
+    text-align: center;
+    border: 2px solid black;
+    margin: 0.5em 0;
+    border-radius: 1em;
+    padding: 3.699em 5.2em;
+    background-color: #cfcfcf;
+    font-size: 1.6rem;
+}
+
+/*Level 2 nav css */
+
+.nav {
+    width: 100%;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    border: 4px solid #4372ff;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: rgb(60, 0, 255);
+    border-radius: 0.7em 0.7em 0 0;
+    
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+.nav ul li {
+    padding: 1em;
+
+}
+
+.side-bar{
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+    /* border: 4px solid #4372ff; */
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.left{
+    width: 40%;
+    height: 100vh;
+    border: 2px solid #4372ff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em 0 0 0.5em;
+}
+.Right{
+    width: 60%;
+    height: 100vh;
+    border: 2px solid #4372ff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .rows {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+}
