@@ -16,9 +16,15 @@
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+
+
 </head>
 
 <body>
+
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -45,136 +51,178 @@
 
 
 
-    <form class="d-flex m-4" role="search">
+    <!-- <form class="d-flex m-4" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 200px;">
         <button class="btn btn-outline-primary" type="submit">Search</button>
-    </form>
+    </form> -->
 
+    <div class="container my-4">
+        <table class="table table-striped my-5" id="example">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>William</td>
+                    <td>Otto</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Charlotte</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>James</td>
+                    <td>Larry</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Liam</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Oliver</td>
+                    <td>Bird</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Evelyn</td>
+                    <td>Jack</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>William</td>
+                    <td>Otto</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Charlotte</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>James</td>
+                    <td>Larry</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Liam</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Oliver</td>
+                    <td>Bird</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Evelyn</td>
+                    <td>Jack</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row" 14</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>Oliver</td>
+                    <td>Bird</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Evelyn</td>
+                    <td>Jack</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>William</td>
+                    <td>Otto</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">19</th>
+                    <td>Charlotte</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>James</td>
+                    <td>Larry</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">21</th>
+                    <td>Liam</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">22</th>
+                    <td>Oliver</td>
+                    <td>Bird</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">23</th>
+                    <td>Evelyn</td>
+                    <td>Jack</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">24</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table class="table table-striped my-3">
-        <thead class="table-dark sticky-top" >
-            <tr>
-                <th scope="col">No</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Mark</td>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>William</td>
-                <td>Otto</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Charlotte</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>James</td>
-                <td>Larry</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td>Liam</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">8</th>
-                <td>Oliver</td>
-                <td>Bird</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">9</th>
-                <td>Evelyn</td>
-                <td>Jack</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">10</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">11</th>
-                <td>Amelia</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">12</th>
-                <td>Noah</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">13</th>
-                <td>Amelia</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <th scope="row">14</th>
-            <td>Evelyn</td>
-            <td>Jack</td>
-            <td>@fat</td>
-            <tr>
-                <th scope="row">15</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">16</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">17</th>
-                <td>Mark</td>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-
-
-        </tbody>
-    </table>
-
-    <nav aria-label="Page navigation example" class="d-flex justify-content-center align-items-center">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="search.html">&laquo; Previous</a></li>
-            <li class="page-item"><a class="page-link active" href="search.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="search1.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next &raquo;</a></li>
-        </ul>
-    </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 </body>
 
 </html>
