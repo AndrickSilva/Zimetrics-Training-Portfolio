@@ -21,14 +21,64 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!------------------ Slider Js ---------------->
+    <!-- Demo styles -->
+    <style>
+        .sw,
+        .sw {
+            position: relative;
+            height: 100%;
+        }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        .sw {
+            /* background: #eee; */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            /* font-size: 14px; */
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            /* font-size: 18px; */
+            /* background: #fff; */
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        /* .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+    </style>
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <!------------------ CSS ---------------->
 
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -64,12 +114,18 @@
             </div>
 
             <div class="header-two">
-                <a class="list-group-item white" href="#m-container"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-                <a class="list-group-item white" href="#about"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; About</a>
-                <a class="list-group-item white" href="#Resume"><i class="fa fa-file fa-fw" aria-hidden="true"></i>&nbsp; Resume</a>
-                <a class="list-group-item white" href="#portfolio"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Portfolio</a>
-                <a class="list-group-item white" href="#service"><i class="fa fa-server fa-fw" aria-hidden="true"></i>&nbsp; Services</a>
-                <a class="list-group-item white" href="#Contact"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Contact</a>
+                <a class="list-group-item white" href="#m-container"><i class="fa fa-home fa-fw"
+                        aria-hidden="true"></i>&nbsp; Home</a>
+                <a class="list-group-item white" href="#about"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
+                    About</a>
+                <a class="list-group-item white" href="#Resume"><i class="fa fa-file fa-fw"
+                        aria-hidden="true"></i>&nbsp; Resume</a>
+                <a class="list-group-item white" href="#portfolio"><i class="fa fa-book fa-fw"
+                        aria-hidden="true"></i>&nbsp; Portfolio</a>
+                <a class="list-group-item white" href="#service"><i class="fa fa-server fa-fw"
+                        aria-hidden="true"></i>&nbsp; Services</a>
+                <a class="list-group-item white" href="#Contact"><i class="fa fa-envelope fa-fw"
+                        aria-hidden="true"></i>&nbsp; Contact</a>
             </div>
 
             <footer>
@@ -398,12 +454,51 @@
                 </div>
 
                 <div class="image-container">
-                    <img src="./img/image.png" width="100%" alt="" data-aos="fade-up">
-                    <img src="./img/image1.png" width="100%" alt="" data-aos="fade-up">
-                    <img src="./img/image2.png" width="100%" alt="" data-aos="fade-up">
-                    <img src="./img/image31.png" width="100%" alt="" data-aos="fade-up">
-                    <img src="./img/image4.png" width="100%" alt="" data-aos="fade-up">
-                    <img src="./img/image51.png" width="100%" alt="" data-aos="fade-up">
+
+                    <div class="img">
+                        <img src="./img/image.png" width="100%" alt="" rc="./img/image1.png" width="100%" alt=""
+                            data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="./img/image1.png" width="100%" alt="" data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/image2.png" width="100%" alt="" data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/image31.png" width="100%" alt="" data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/image4.png" width="100%" alt="" data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/image51.png" width="100%" alt="" data-aos="fade-up">
+                        <div class="img-footer">
+                            <i class="fa-solid fa-plus white"></i>
+                            <i class="fa-solid fa-link white"></i>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -509,56 +604,185 @@
                     Quia fugiat sit in iste officiis commodi quidem hic quas.
                 </p>
 
-                <div class="Testimonials-cont">
-                    <div class="Testimonials-card">
-                        <div class="Testimony">
+                <!-- Swiper -->
+                <section class="sw">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1 -->
+                            <div class="swiper-slide Testimonials-cont">
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus
+                                            at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/CodeWithHarry.png" alt="Profile-Picture" height="60px">
+                                        <h2>CodeWithHarry</h2>
+                                        <p class="p-style">Youtuber</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
 
-                            <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                suscipit
-                                rhoncus.
-                                Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                                semper.
-                            </p>
-                        </div>
-                        <div class="client">
-                            <img src="//github.com/pexeixv.png" alt="Profile-Picture">
-                            <h2>Gavinp</h2>
-                            <p class="p-style">Classmate</p>
-                        </div>
-                    </div>
-                    <div class="Testimonials-card">
-                        <div class="Testimony">
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/saiprasad-naik.png" alt="Profile-Picture">
+                                        <h2>Saiprasad Naik</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card ">
+                                    <div class="Testimony">
 
-                            <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                suscipit
-                                rhoncus.
-                                Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                                semper.
-                            </p>
-                        </div>
-                        <div class="client">
-                            <img src="//github.com/saiprasad-naik.png" alt="Profile-Picture">
-                            <h2>Saiprasad Naik</h2>
-                            <p class="p-style">Classmate</p>
-                        </div>
-                    </div>
-                    <div class="Testimonials-card">
-                        <div class="Testimony">
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/pexeixv.png" alt="Profile-Picture">
+                                        <h2>Gavinp</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="swiper-slide Testimonials-cont">
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus
+                                            at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/CodeWithHarry.png" alt="Profile-Picture" height="60px">
+                                        <h2>CodeWithHarry</h2>
+                                        <p class="p-style">Youtuber</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
 
-                            <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                suscipit
-                                rhoncus.
-                                Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                                semper.
-                            </p>
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/saiprasad-naik.png" alt="Profile-Picture">
+                                        <h2>Saiprasad Naik</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card ">
+                                    <div class="Testimony">
+
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/pexeixv.png" alt="Profile-Picture">
+                                        <h2>Gavinp</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="swiper-slide Testimonials-cont">
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus
+                                            at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/CodeWithHarry.png" alt="Profile-Picture" height="60px">
+                                        <h2>CodeWithHarry</h2>
+                                        <p class="p-style">Youtuber</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card">
+                                    <div class="Testimony">
+
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/saiprasad-naik.png" alt="Profile-Picture">
+                                        <h2>Saiprasad Naik</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-card ">
+                                    <div class="Testimony">
+
+                                        <p class="p-style"> Proin iaculis purus consequat sem cure digni ssim donec
+                                            porttitora entum
+                                            suscipit
+                                            rhoncus.
+                                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at
+                                            semper.
+                                        </p>
+                                    </div>
+                                    <div class="client">
+                                        <img src="//github.com/pexeixv.png" alt="Profile-Picture">
+                                        <h2>Gavinp</h2>
+                                        <p class="p-style">Classmate</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="client">
-                            <img src="//github.com/CodeWithHarry.png" alt="Profile-Picture">
-                            <h2>CodeWithHarry</h2>
-                            <p class="p-style">Youtuber</p>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </div>
+                </section>
             </section>
 
             <!-- Contact section -->
@@ -643,7 +867,22 @@
     <!----------------- Javascript tags ------------------>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
