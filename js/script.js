@@ -49,13 +49,13 @@ typewriter
     .start();
 
 
-// slider
+// portfolio
 
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
+const pbtn = document.querySelectorAll(".btn-bg button")
+
+pbtn.forEach(p=>p.addEventListener('click', function() {
+
+    pbtn.forEach(popot=>popot.classList.remove('active'))
+    p.classList.toggle('active')
+    
+}))

@@ -391,6 +391,46 @@ section {
     /* padding: 3em 0; */
 }
 
+.img {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.img:hover .imgHover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img:hover .img-footer {
+    transform: translateY(0%);
+}
+
+.img-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--underLine);
+    width: 100%;
+    height: 1.8em;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    transform: translateY(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.img-footer i {
+    opacity: 0.9;
+
+}
+
+.img-footer i:hover {
+
+    opacity: 1;
+}
+
 .btn-conatiner {
     display: flex;
     justify-content: center;
@@ -489,10 +529,51 @@ section {
 
 .Testimonials-card {
     /* border: 2px solid red; */
-    width: 30%;
+    /* width: 30%; */
     margin: 2em;
     padding-bottom: 5em;
 }
+
+/* swiper js */
+
+.sw,
+.sw {
+    position: relative;
+    height: 100%;
+}
+
+.sw {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* swiper end */
+
+
 
 .client {
     display: flex;
@@ -626,10 +707,12 @@ section {
 input {
     margin-top: 0.6em;
     display: inline-block;
-    padding: 1em 2em;
     border: 1px solid rgb(199, 199, 199);
     width: 100%;
     margin-bottom: 1.5em;
+    padding: 0.7em;
+    font-size: 1rem;
+    outline: none;
 }
 
 .field-divider {
@@ -643,7 +726,9 @@ textarea {
     border: 1px solid rgb(199, 199, 199);
     margin-top: 0.6em;
     margin-bottom: 1.5em;
-    padding: 3.5em 0;
+    padding: 1em;
+    font-size: 1rem;
+    outline: none;
 }
 
 .button-cont {
@@ -691,14 +776,6 @@ textarea {
     visibility: visible;
 }
 
-.img-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: var(--underLine);
-    width: 100%;
-    height: 30px;
-}
 
 
 
