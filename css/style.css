@@ -391,6 +391,15 @@ section {
     /* padding: 3em 0; */
 }
 
+.img.hide {
+    display: none;
+}
+
+.img.show {
+    display: block;
+}
+
+
 .img {
     position: relative;
     overflow: hidden;

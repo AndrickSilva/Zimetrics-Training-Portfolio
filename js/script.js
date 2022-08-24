@@ -51,11 +51,30 @@ typewriter
 
 // portfolio
 
-const pbtn = document.querySelectorAll(".btn-bg button")
+const portfolio_btn = document.querySelectorAll(".btn-bg button")
+const portfolio_img = document.querySelectorAll(".img")
 
-pbtn.forEach(p=>p.addEventListener('click', function() {
-
-    pbtn.forEach(popot=>popot.classList.remove('active'))
-    p.classList.toggle('active')
+portfolio_btn.forEach(p => p.addEventListener('click', function () {
     
+    portfolio_btn.forEach(p1 => p1.classList.remove('active'))
+    p.classList.add('active')
+
+    portfolio_btn.item(0).addEventListener('click', () => {
+        portfolio_img.forEach(pti => pti.classList.remove('hide'))
+    })
+    portfolio_btn.item(1).addEventListener('click', () => {
+        portfolio_img.forEach(pti => pti.classList.add('hide'))
+        portfolio_img.item(4).classList.remove('hide')
+        portfolio_img.item(5).classList.remove('hide')
+    })
+    portfolio_btn.item(2).addEventListener('click', () => {
+        portfolio_img.forEach(pti => pti.classList.add('hide'))
+        portfolio_img.item(3).classList.remove('hide')
+    })
+    portfolio_btn.item(3).addEventListener('click', () => {
+        portfolio_img.forEach(pti => pti.classList.add('hide'))
+        portfolio_img.item(0).classList.remove('hide')
+        portfolio_img.item(1).classList.remove('hide')
+        portfolio_img.item(2).classList.remove('hide')
+    })
 }))
