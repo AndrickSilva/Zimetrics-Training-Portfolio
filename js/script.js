@@ -78,3 +78,11 @@ portfolio_btn.forEach(p => p.addEventListener('click', function () {
         portfolio_img.item(2).classList.remove('hide')
     })
 }))
+
+
+// Loader
+const load = document.getElementById("loader");
+
+ setTimeout(function(){
+    load.style.display = "none";
+}, 1000);
