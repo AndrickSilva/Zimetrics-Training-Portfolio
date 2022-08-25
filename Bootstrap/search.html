@@ -19,7 +19,24 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
 
 
+    <style>
 
+        *{
+            color: #14a763;
+        }
+
+        label {
+            margin: 1em 0;
+        }
+
+        .dataTables_wrapper .dataTables_length,
+        .dataTables_wrapper .dataTables_filter,
+        .dataTables_wrapper .dataTables_info,
+        .dataTables_wrapper .dataTables_processing,
+        .dataTables_wrapper .dataTables_paginate {
+            color: #14a763;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,7 +75,7 @@
 
     <div class="container my-4">
         <table class="table table-striped my-5" id="example">
-            <thead class="table-dark">
+            <thead class="table-success">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">First</th>
