@@ -55,7 +55,7 @@ const portfolio_btn = document.querySelectorAll(".btn-bg button")
 const portfolio_img = document.querySelectorAll(".img")
 
 portfolio_btn.forEach(p => p.addEventListener('click', function () {
-    
+
     portfolio_btn.forEach(p1 => p1.classList.remove('active'))
     p.classList.add('active')
 
@@ -83,6 +83,6 @@ portfolio_btn.forEach(p => p.addEventListener('click', function () {
 // Loader
 const load = document.getElementById("loader");
 
- setTimeout(function(){
+setTimeout(function () {
     load.style.display = "none";
 }, 1000);

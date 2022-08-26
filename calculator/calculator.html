@@ -11,64 +11,61 @@
     <title>Calculator app</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
 </head>
 
-<body style="background-color: rgb(0, 121, 227);">
+<body style="background-color: var(--bs-secondary);">
 
     <div class=" shadow container d-flex flex-column justify-content-center align-items-center  p-4 mt-5 rounded-4 "
-        style="background-color: #fff; width: max-content;">
-        <header>
-            <h2 class="fs-1 text-secondary">Calculator</h2>
-
-        </header>
-
+        style="background-color: #3A4764; width: max-content;">
+        
         <input class="screen form-control form-control-lg rounded-3 shadow-xs fw-bolder "
-            style="text-align: right; width: 15em; background-color: rgb(227, 227, 227);" type="number onwheel="
+            style="text-align: right; width: 15em; background-color: rgb(235 235 235); outline: none;" type="number onwheel="
             this.blur()" class="screen">
 
         <div class="key-pad my-3">
             <div class="">
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">7</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">8</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">9</button>
-                <button class="btn btn-danger p-3 m-1 rounded-1 shadow-sm fw-bolder" style="width: 4em;">DEL</button>
+                <button class="btn btn-danger p-3 m-1 rounded-1 shadow-sm fw-bolder" style="width: 4em;"><</button>
             </div>
             <div class="">
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">4</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">5</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">6</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">+</button>
             </div>
             <div class="">
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">1</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">2</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">3</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">-</button>
             </div>
             <div class="">
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">.</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">0</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">/</button>
-                <button class="btn btn-outline-secondary p-3 m-1 rounded-1 shadow-sm fw-bolder"
+                <button class="btn btn-dark p-3 m-1 rounded-1 shadow-sm fw-bolder"
                     style="width: 4em; ">*</button>
             </div>
             <div class="d-flex">
                 <button class="btn btn-danger last-btn reset p-3 m-1 fw-bolder rounded-1 shadow-sm"
-                    style="width: 50%; ">RESET</button>
+                    style="width: 50%; ">C</button>
                 <button class="btn btn-primary last-btn equal p-3 m-1 fw-bolder rounded-1 shadow-sm"
                     style="width: 50%; ">=</button>
             </div>
