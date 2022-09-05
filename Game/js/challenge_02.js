@@ -35,8 +35,8 @@ const getCompChoice = () => {
 
     compChoices.forEach((e) => {
         setTimeout(() => {
-            e.classList.add('hide')
-            compChoice.classList.remove('hide')
+            e.classList.add('hide2')
+            compChoice.classList.remove('hide2')
         }, 100);
     })
 }
@@ -70,7 +70,7 @@ const getResults = (playerChoiceName, compChoiceName) => {
 
         case 'scissorrock':
         case 'rockpaper':
-            // case 'paperscissor':
+        case 'paperscissor':
             //     console.log("You LOST");
             playerPoints++;
             // console.log('Comp' + ' ' + compPoints);
@@ -98,6 +98,7 @@ const getResults = (playerChoiceName, compChoiceName) => {
         console.log('player won');
         msg = player == null ? 'You are leading' : player + ' ' + 'is leading'
     }
+    decision.style.padding = '0.333em'
     decision.innerHTML = msg;
 
     //results

@@ -6,11 +6,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
-h2 {
+h1 {
     color: white;
     text-align: center;
     margin-bottom: 2em;
+
+}
+
+h2 {
+    color: black;
+    background-color: aquamarine;
+    text-align: center;
+    margin-bottom: 2em;
+    border-radius: 200px;
+    padding: 0.222em 0;
+
 }
 
 p {
@@ -20,8 +30,8 @@ p {
 }
 
 .hero {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: #2d2d37;
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); */
     min-height: 100vh;
     padding: 1em 0;
 }
@@ -41,33 +51,38 @@ p {
     transition: all ease-out 0.3s;
 }
 
-.img-container img:hover {
-    box-shadow: 2px 43px 85px -16px rgba(0, 0, 0, 0.65);
-    -webkit-box-shadow: 2px 43px 85px -16px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 2px 43px 85px -16px rgba(0, 0, 0, 0.65);
+.player img:hover {
+    box-shadow: 2px 43px 85px -16px rgba(127, 255, 212, 1.65);
+    -webkit-box-shadow: 2px 43px 85px -16px rgba(127, 255, 212, 1.65);
+    -moz-box-shadow: 2px 43px 85px -16px rgba(127, 255, 212, 1.65);
 }
 
 .hide {
     display: none !important;
+}
+
+.hide2 {
     visibility: hidden;
 }
 
 #decision {
+    margin: 0 auto;
     margin-top: 3em;
+    width: 15em;
+    color: black;
+    background-color: aquamarine;
+    text-align: center;
+    margin-bottom: 2em;
+    border-radius: 200px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 
 /* Result page */
 
 .result {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    /* background-image: url(./images/popper.gif); */
-    flex-direction: column;
+    background: black;
 }
 
 .result button {
@@ -99,4 +114,21 @@ p {
 
 .img-container p {
     font-size: 1.2rem;
+}
+
+#dispResult {
+    color: aliceblue;
+}
+
+.gif {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/popper.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(./images/popper.gif); */
+    flex-direction: column;
 }
