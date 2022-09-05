@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissor</title>
+    <link rel="shortcut icon" href="./images/rock-paper-scissors-neon-icons.png" type="image/x-icon">
+    <script defer src="./js/challenge_02.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <h1>Choose a option</h1>
+        <h2>Round <span id="Round">1</span></h2>
+        <div class="container">
+            <div class="img-container comp">
+                <h2>Computer</h2>
+                <img src="./images/stone.png" height="150px" alt="stone" id="rock">
+                <img src="./images/paper.png" height="150px" alt="Paper" id="paper">
+                <img src="./images/scissors.png" height="150px" alt="Scissor" id="scissor">
+                <p>Points: <span id="Ppoints">0</span> </p>
+            </div>
+            <h1>VS</h1>
+            <div class="img-container player">
+                <h2 id="player">You</h2>
+                <img src="./images/stone.png" height="150px" alt="stone" class="rock">
+                <img src="./images/paper.png" height="150px" alt="Paper" class="paper">
+                <img src="./images/scissors.png" height="150px" alt="Scissor" class="scissor">
+                <p>Points: <span id="Cpoints">0</span> </p>
+            </div>
+        </div>
+        <h2 id="decision"></h2>
+    </div>
+
+    <div class="result hide">
+        <h1> <span id="dispResult"> </span> won</h1>
+        <button><a href="index.html" style="text-decoration: none;">Play again</a></button>
+    </div>
+
+</body>
+
+</html>
