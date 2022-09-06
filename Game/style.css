@@ -81,9 +81,6 @@ p {
 
 /* Result page */
 
-.result {
-    background: black;
-}
 
 .result button {
     padding: 1em 2em;
@@ -117,10 +114,11 @@ p {
 }
 
 #dispResult {
-    color: aliceblue;
+    color: orange;
+    font-size: 4rem;
 }
 
-.gif {
+.gifW {
     width: 100%;
     height: 100vh;
     background: url(./images/popper.gif);
@@ -131,4 +129,22 @@ p {
     width: 100%;
     /* background-image: url(./images/popper.gif); */
     flex-direction: column;
+}
+
+.gifL {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/Lost.gif);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.gif {
+    background: black;
 }

@@ -1,64 +1,49 @@
 //Display on result page
-const dispResult = document.getElementById('dispResult')
-const Result = document.querySelector('.result')
+var dispResult = document.getElementById('dispResult');
+var Result = document.querySelector('.result');
 console.log(Result);
-
-
 //Points
 var playerPoints = 0;
 var compPoints = 0;
-const Ppoints = document.getElementById('Ppoints')
-const Cpoints = document.getElementById('Cpoints')
-
+var Ppoints = document.getElementById('Ppoints');
+var Cpoints = document.getElementById('Cpoints');
 //Rounds
-let round = 1;
-const Rounds = document.getElementById('Round');
-
+var round = 1;
+var Rounds = document.getElementById('Round');
 //decision
-const decision = document.getElementById('decision')
-
+var decision = document.getElementById('decision');
 //Player name
-let player = prompt("Enter your name");
-let playerName = document.getElementById('player')
+var player = prompt("Enter your name");
+var playerName = document.getElementById('player');
 if (player != null) {
     playerName.innerText = player.toUpperCase();
 }
-
-
 //hide after randomly generating  && comp answer
-let compChoiceName;
-const getCompChoice = () => {
-    let compChoices = document.querySelectorAll('.comp img')
-    let compChoice = compChoices[Math.floor(Math.random() * compChoices.length)];
+var compChoiceName;
+var getCompChoice = function () {
+    var compChoices = document.querySelectorAll('.comp img');
+    var compChoice = compChoices[Math.floor(Math.random() * compChoices.length)];
     compChoiceName = compChoice.id;
     console.log(compChoiceName);
-
-    compChoices.forEach((e) => {
-        setTimeout(() => {
-            e.classList.add('hide2')
-            compChoice.classList.remove('hide2')
+    compChoices.forEach(function (e) {
+        setTimeout(function () {
+            e.classList.add('hide2');
+            compChoice.classList.remove('hide2');
         }, 100);
-    })
-}
-
-
-
-
+    });
+};
 //hide after player clicks  && Player answer
-let playerChoices = document.querySelectorAll('.player img')
-Array.from(playerChoices).forEach(elem => {
-    elem.addEventListener('click', (test) => {
-        let playerChoiceName = test.target.className
+var playerChoices = document.querySelectorAll('.player img');
+playerChoices.forEach(function (elem) {
+    elem.addEventListener('click', function (e) {
+        var playerChoiceName = e.target.className;
         console.log(playerChoiceName);
-        getCompChoice()
-        getResults(playerChoiceName, compChoiceName)
-    })
-})
-
-
+        getCompChoice();
+        getResults(playerChoiceName, compChoiceName);
+    });
+});
 //Results
-
-const getResults = (playerChoiceName, compChoiceName) => {
+var getResults = function (playerChoiceName, compChoiceName) {
     switch (playerChoiceName + compChoiceName) {
         case 'rockscissor':
         case 'paperrock':
@@ -67,7 +52,6 @@ const getResults = (playerChoiceName, compChoiceName) => {
             compPoints++;
             // console.log('Player' + ' ' + playerPoints);
             break;
-
         case 'scissorrock':
         case 'rockpaper':
         case 'paperscissor':
@@ -75,45 +59,47 @@ const getResults = (playerChoiceName, compChoiceName) => {
             playerPoints++;
             // console.log('Comp' + ' ' + compPoints);
             break;
-
         case 'rockrock':
         case 'paperpaper':
         case 'scissorscissor':
             // console.log("Its a DRAW");
             break;
     }
-    round++
-    Rounds.innerHTML = round;
-    Ppoints.innerHTML = playerPoints;
-    Cpoints.innerHTML = compPoints
-
-    let msg
+    round++;
+    Rounds.innerHTML = String(round);
+    Ppoints.innerHTML = String(playerPoints);
+    Cpoints.innerHTML = String(compPoints);
+    var msg;
     if (playerPoints == compPoints) {
         console.log("DRAW");
-        msg = 'DRAW'
-    } else if (playerPoints > compPoints) {
-        console.log(`Computer won`);
-        msg = 'Computer is leading'
-    } else {
-        console.log('player won');
-        msg = player == null ? 'You are leading' : player + ' ' + 'is leading'
+        msg = 'DRAW';
     }
-    decision.style.padding = '0.333em'
+    else if (playerPoints > compPoints) {
+        console.log("Computer won");
+        msg = 'Computer is leading';
+    }
+    else {
+        console.log('player won');
+        msg = player == null ? 'You are leading' : player + ' ' + 'is leading';
+    }
+    decision.style.padding = '0.333em';
     decision.innerHTML = msg;
-
     //results
     if (round >= 4 && compPoints > playerPoints) {
-        setTimeout(() => {
-            document.body.firstElementChild.style.display = 'none'
-            Result.classList.remove('hide')
-            dispResult.innerHTML = player == null ? 'You' : player;
+        setTimeout(function () {
+            document.body.firstElementChild.style.display = 'none';
+            Result.classList.remove('hide');
+            dispResult.innerHTML = player == null ? 'You won' : player + ' ' + 'won';
+            Result.classList.add('gifW')
         }, 1000);
-    } else if (round >= 4 && playerPoints > compPoints) {
-        setTimeout(() => {
-            document.body.firstElementChild.style.display = 'none'
-            Result.classList.remove('hide')
-            dispResult.innerHTML = 'Computer';
+    }
+    else if (round >= 4 && playerPoints > compPoints) {
+        setTimeout(function () {
+            document.body.firstElementChild.style.display = 'none';
+            Result.classList.remove('hide');
+            dispResult.innerHTML = 'Computer won';
+            Result.classList.add('gifL')
 
         }, 1000);
     }
-}
+};
