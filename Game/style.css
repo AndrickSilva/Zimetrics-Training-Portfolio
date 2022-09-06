@@ -43,6 +43,10 @@ p {
     margin-top: 8em;
 }
 
+.comp {
+    overflow: hidden;
+}
+
 .img-container img {
     cursor: pointer;
     margin-left: 1em;
