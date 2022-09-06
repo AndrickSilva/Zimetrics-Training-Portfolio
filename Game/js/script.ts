@@ -20,7 +20,7 @@ const decision = document.getElementById('decision')! as HTMLElement;
 //Player name
 let player: string | null = prompt("Enter your name");
 let playerName = document.getElementById('player')! as HTMLElement;
-if (player != null) {
+if (player) {
     playerName!.innerText = player.toUpperCase();
 }
 
@@ -98,17 +98,18 @@ const getResults = (playerChoiceName: string, compChoiceName: string) => {
     decision!.style.padding = '0.333em'
     decision!.innerHTML = msg;
 
+    let hero = document.querySelector('.hero') as HTMLElement;
     //results
     if (round >= 4 && compPoints > playerPoints) {
         setTimeout(() => {
-            (document.body.firstElementChild as HTMLElement).style.display = 'none'
+            hero.style.display = 'none'
             Result!.classList.remove('hide')
             dispResult!.innerHTML = player == null ? 'You won' : player + ' ' + 'won';
             Result!.classList.add('gifW')
         }, 1000);
     } else if (round >= 4 && playerPoints > compPoints) {
         setTimeout(() => {
-            (document.body.firstElementChild as HTMLElement).style.display = 'none'
+            hero.style.display = 'none'
             Result!.classList.remove('hide')
             dispResult!.innerHTML = 'Computer won';
             Result!.classList.add('gifL')

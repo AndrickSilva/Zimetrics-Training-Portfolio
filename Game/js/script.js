@@ -10,7 +10,7 @@ var Rounds = document.getElementById('Round');
 var decision = document.getElementById('decision');
 var player = prompt("Enter your name");
 var playerName = document.getElementById('player');
-if (player != null) {
+if (player) {
     playerName.innerText = player.toUpperCase();
 }
 var compChoiceName;
@@ -73,9 +73,10 @@ var getResults = function (playerChoiceName, compChoiceName) {
     }
     decision.style.padding = '0.333em';
     decision.innerHTML = msg;
+    var hero = document.querySelector('.hero');
     if (round >= 4 && compPoints > playerPoints) {
         setTimeout(function () {
-            document.body.firstElementChild.style.display = 'none';
+            hero.style.display = 'none';
             Result.classList.remove('hide');
             dispResult.innerHTML = player == null ? 'You won' : player + ' ' + 'won';
             Result.classList.add('gifW');
@@ -83,7 +84,7 @@ var getResults = function (playerChoiceName, compChoiceName) {
     }
     else if (round >= 4 && playerPoints > compPoints) {
         setTimeout(function () {
-            document.body.firstElementChild.style.display = 'none';
+            hero.style.display = 'none';
             Result.classList.remove('hide');
             dispResult.innerHTML = 'Computer won';
             Result.classList.add('gifL');

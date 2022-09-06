@@ -17,7 +17,7 @@ h2 {
     color: black;
     background-color: aquamarine;
     text-align: center;
-    margin-bottom: 2em;
+    margin: 2em 3em;
     border-radius: 200px;
     padding: 0.222em 0;
 
@@ -34,6 +34,7 @@ p {
     /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); */
     min-height: 100vh;
     padding: 1em 0;
+    transition: all 1s ease-out;
 }
 
 .container {
@@ -161,5 +162,23 @@ p {
 
     to {
         opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin-top: 0;
+    }
+
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    h2 {
+        margin: 0em;
+        margin-bottom: 3em;
     }
 }
