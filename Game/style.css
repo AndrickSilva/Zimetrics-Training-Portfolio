@@ -82,10 +82,7 @@ p {
     font-weight: 700;
 }
 
-
 /* Result page */
-
-
 .result button {
     padding: 1em 2em;
     text-decoration: none;
@@ -151,4 +148,18 @@ p {
 
 .gif {
     background: black;
+}
+
+.result {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
